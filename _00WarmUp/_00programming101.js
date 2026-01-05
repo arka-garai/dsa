@@ -19,7 +19,7 @@ let firstName = "Arka";
 let lastName = "Garai";
 
 let fullName = firstName + " " + lastName;
-//javascript code execution takes place inside js engine
+//JavaScript code execution takes place inside js engine
 console.log(fullName)
 //console.log(fullName)
 
