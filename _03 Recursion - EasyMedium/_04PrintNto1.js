@@ -1,0 +1,10 @@
+function print(n) {
+    if(n<1){
+        return;
+    }
+    console.log(n);
+    print(--n);
+    
+}
+
+print(5);
