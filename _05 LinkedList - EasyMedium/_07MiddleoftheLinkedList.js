@@ -7,7 +7,6 @@ var middleNode = function (head) {
   return slow;
 };
 
-
 function Node(val) {
     this.val = val;
     this.next = null;
