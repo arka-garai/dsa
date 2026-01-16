@@ -4,7 +4,7 @@
 //convert LL to array then check if the array is palindrome or not
 //tc = sc = o(n)
 
-var isPalindrome = function (head) {
+let isPalindrome = function (head) {
   let curr = head;
   let arr = [];
   while (curr) {
@@ -13,7 +13,7 @@ var isPalindrome = function (head) {
   }
   let n = arr.length;
   for (let i = 0; i < n; i++) {
-    if (arr[i] != arr[n - i - 1]) {
+    if (arr[i] !== arr[n - i - 1]) {
       return false;
     }
   }
@@ -22,7 +22,7 @@ var isPalindrome = function (head) {
 
 //approach 2
 //tc = o(n)    sc = o(1)
-var isPalindrome = function (head) {
+let isPalindrome2 = function (head) {
   //find middle node
   let slow = head;
   let fast = head;
@@ -46,7 +46,7 @@ var isPalindrome = function (head) {
   let right = prev;
 
   while (right) {
-    if (left.val != right.val) {
+    if (left.val !== right.val) {
       return false;
     }
     right = right.next;
@@ -54,3 +54,4 @@ var isPalindrome = function (head) {
   }
   return true;
 };
+
